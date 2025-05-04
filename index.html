@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Everything That's You</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('love.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Georgia, serif;
+      color: #ffe6f0;
+    }
+    .page {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+      backdrop-filter: brightness(60%);
+    }
+    .active {
+      display: flex;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.3rem;
+      max-width: 600px;
+    }
+    button {
+      background-color: #ff4d6d;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ff1a4d;
+    }
+    iframe {
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page active" id="page0">
+    <h1>I love you so much mommyyy</h1>
+    <p>I love everything that's you, so here is you in different genres.</p>
+    <button onclick="nextPage()">Touch me mommy!!!</button>
+  </div>
+
+  <div class="page" id="page1">
+    <h1>Her Eyes</h1>
+    <p>There’s a universe behind her lashes.</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7hDVYcQq6MxkdJGweuCtl9?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="page" id="page2">
+    <h1>Her Lips</h1>
+    <p>Petals soaked in wine and honey.</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7MtVPRGtZl6rPjMfLoI3Lh?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="page" id="page3">
+    <h1>Her Hands</h1>
+    <p>The way she holds the world, and my heart, so gently.</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0T5iIrXA4p5GsubkhuBIKV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="page" id="page4">
+    <h1>Her Voice</h1>
+    <p>A lullaby written just for me.</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6GGtHZgBycCgGBUhZo81xe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="page" id="page5">
+    <h1>Her Hair</h1>
+    <p>Silken chaos, the storm I want to drown in.</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0SzvmWfOhoxZVGrmvb56YL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="page" id="page6">
+    <h1>Her Smile</h1>
+    <p>Like sunrise after decades of rain.</p>
+   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0NdTUS4UiNYCNn5FgVqKQY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="page" id="page7">
+    <h1>Her Laugh</h1>
+    <p>Windchimes in a world full of alarms.</p>
+   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1NZs6n6hl8UuMaX0UC0YTz?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="page" id="page8">
+    <h1>Her Soul</h1>
+    <p>If stardust could love, it would be her.</p>
+   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0GVPRo9LEjxjT4C4o8BGot?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="page" id="page9">
+    <h1>Her Existence</h1>
+    <p>The symphony of every heartbeat, the home where all my poems live.</p>
+   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7eQl3Yqv35ioqUfveKHitE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <script>
+    let currentPage = 0;
+    function nextPage() {
+      document.getElementById(`page${currentPage}`).classList.remove('active');
+      currentPage++;
+      if (currentPage <= 9) {
+        document.getElementById(`page${currentPage}`).classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
