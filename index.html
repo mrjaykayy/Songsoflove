@@ -2,137 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Everything That's You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whispers Between Wounds</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
     body {
       margin: 0;
       padding: 0;
-      background: url('love.jpg') no-repeat center center fixed;
+      font-family: 'Handlee', cursive;
+      background: url('love.png') no-repeat center center fixed;
       background-size: cover;
-      font-family: Georgia, serif;
-      color: #ffe6f0;
-    }
-    .page {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 100vh;
-      padding: 20px;
-      backdrop-filter: brightness(60%);
-    }
-    .active {
+      color: #f3e5dc;
       display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      backdrop-filter: brightness(0.7) blur(2px);
     }
+
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 800px;
+      box-shadow: 0 0 30px rgba(255, 192, 203, 0.2);
+    }
+
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #e6b8af;
+      text-align: center;
     }
-    p {
-      font-size: 1.3rem;
-      max-width: 600px;
-    }
-    button {
-      background-color: #ff4d6d;
-      border: none;
-      border-radius: 12px;
-      color: white;
-      padding: 12px 24px;
+
+    .poem {
+      white-space: pre-wrap;
+      line-height: 1.8;
       font-size: 1.2rem;
-      cursor: pointer;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
+      color: #f8f4f2;
     }
-    button:hover {
-      background-color: #ff1a4d;
-    }
-    iframe {
-      margin-top: 20px;
-      border-radius: 12px;
+
+    .highlight {
+      color: #ffb3ab;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
-  <div class="page active" id="page0">
-    <h1>I love you so much mommyyy</h1>
-    <p>I love everything that's you, so here is you in different genres.</p>
-    <button onclick="nextPage()">Touch me mommy!!!</button>
-  </div>
+  <div class="container">
+    <h1>Whispers Between Wounds</h1>
+    <div class="poem">
+      I’ve lost all shape, all sense, all name—<br>
+      A ghost with hands that still call yours.<br>
+      Would you lift the glass to my mouth<br>
+      When my lips forget what they’re for?<br><br>
 
-  <div class="page" id="page1">
-    <h1>Her Eyes</h1>
-    <p>There’s a universe behind her lashes.</p>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7hDVYcQq6MxkdJGweuCtl9?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-     <button onclick="nextPage()">Touch me mommy!!!</button>
-  </div>
+      If I’m drunk on pain and start to speak—<br>
+      Slurred truths, regrets, soft cries,<br>
+      Will you hold them like you held me once,<br>
+      Or let them fade with morning skies?<br><br>
 
-  <div class="page" id="page2">
-    <h1>Her Lips</h1>
-    <p>Petals soaked in wine and honey.</p>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7MtVPRGtZl6rPjMfLoI3Lh?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-	 <button onclick="nextPage()">Touch me mommy!!!</button>
-  </div>
+      Hug me—<span class="highlight">just once</span>—even if your arms<br>
+      Are tired of carrying my weight.<br>
+      Throw me away in the next breath if you must,<br>
+      But give me one second of fate.<br><br>
 
-  <div class="page" id="page3">
-    <h1>Her Hands</h1>
-    <p>The way she holds the world, and my heart, so gently.</p>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0T5iIrXA4p5GsubkhuBIKV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-	 <button onclick="nextPage()">Touch me mommy!!!</button>
-  </div>
+      If I rest my head in your lap tonight,<br>
+      Would you run your fingers through my shame?<br>
+      Would you close your eyes and sleep with me,<br>
+      Or whisper my forgotten name?<br><br>
 
-  <div class="page" id="page4">
-    <h1>Her Voice</h1>
-    <p>A lullaby written just for me.</p>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6GGtHZgBycCgGBUhZo81xe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-	 <button onclick="nextPage()">Touch me mommy!!!</button>
-  </div>
+      You don’t leave my mind. You never have.<br>
+      Your silence walks through every room.<br>
+      You are my heart’s illusion still—<br>
+      A sweet, unending wound.<br><br>
 
-  <div class="page" id="page5">
-    <h1>Her Hair</h1>
-    <p>Silken chaos, the storm I want to drown in.</p>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0SzvmWfOhoxZVGrmvb56YL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-	 <button onclick="nextPage()">Touch me mommy!!!</button>
-  </div>
+      I have no pride left in this skin,<br>
+      Only prayers stitched in your name.<br>
+      You’re the last place I felt like home—<br>
+      Now, nothing feels the same.<br><br>
 
-  <div class="page" id="page6">
-    <h1>Her Smile</h1>
-    <p>Like sunrise after decades of rain.</p>
-   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0NdTUS4UiNYCNn5FgVqKQY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-	 <button onclick="nextPage()">Touch me mommy!!!</button>
-  </div>
+      They warned me—<span class="highlight">don’t drink her love,</span><br>
+      It’s honeyed poison, slow and sweet.<br>
+      But I drank it all, with both hands shaking,<br>
+      And now I rot beneath its heat.<br><br>
 
-  <div class="page" id="page7">
-    <h1>Her Laugh</h1>
-    <p>Windchimes in a world full of alarms.</p>
-   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1NZs6n6hl8UuMaX0UC0YTz?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-   <button onclick="nextPage()">Touch me mommy!!!</button>
-  </div>
+      What poison could I fear now,<br>
+      When the cure was always you?<br>
+      When I see your face, my ribs collapse—<br>
+      Tell me, what more could I lose?<br><br>
 
-  <div class="page" id="page8">
-    <h1>Her Soul</h1>
-    <p>If stardust could love, it would be her.</p>
-   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0GVPRo9LEjxjT4C4o8BGot?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-   <button onclick="nextPage()">Touch me mommy!!!</button>
-  </div>
+      Yes, I spoke things soaked in wrong.<br>
+      But I’m standing here, stripped of lies.<br>
+      I’m sorry. Not in words, but in my bones—<br>
+      My soul kneels where your shadow lies.<br><br>
 
-  <div class="page" id="page9">
-    <h1>Her Existence</h1>
-    <p>The symphony of every heartbeat, the home where all my poems live.</p>
-   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7eQl3Yqv35ioqUfveKHitE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-   <button onclick="nextPage()">Touch me mommy!!!</button>
+      I love you.<br>
+      Not as a line, but as a life.<br>
+      As breath, as ache, as broken truth.<br>
+      I love you, my wife—<br>
+      <span class="highlight">You are my only proof.</span>
+    </div>
   </div>
-
-  <script>
-    let currentPage = 0;
-    function nextPage() {
-      document.getElementById(`page${currentPage}`).classList.remove('active');
-      currentPage++;
-      if (currentPage <= 9) {
-        document.getElementById(`page${currentPage}`).classList.add('active');
-      }
-    }
-  </script>
 </body>
 </html>
+
